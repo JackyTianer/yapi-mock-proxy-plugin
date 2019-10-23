@@ -1,0 +1,20 @@
+@import "modules/reset";
+@import "modules/variables";
+@import "modules/grid";
+@import "modules/layout";
+@import "modules/utilities";
+
+.wrap {
+  background: #f1f3f5;
+  padding: 40px;
+}
+
+.wrap-header {
+  background: white;
+  padding: 20px;
+}
+.content{
+  background: white;
+  margin-top: 10px;
+  padding: 20px;
+}
