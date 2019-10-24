@@ -1,6 +1,6 @@
 {
   "name": "YAPI-MOCK-PROXY",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -18,9 +18,8 @@
     "storage",
     "webRequest",
     "webRequestBlocking",
-    "proxy",
-    "http://*/*",
-    "https://*/*"
+    "<all_urls>",
+    "unlimitedStorage"
   ],
   "options_ui": {
     "page": "options.html"
@@ -34,8 +33,8 @@
       "js": [
         "scripts/contentscript.js"
       ],
-      "run_at": "document_end",
-      "all_frames": false
+      "run_at": "document_start",
+      "all_frames": true
     }
   ],
   "browser_action": {
@@ -45,7 +44,10 @@
     },
     "default_title": "Extension Boilerplate",
     "default_popup": "popup.html"
-  }
+  },
+  "web_accessible_resources": [
+    "scripts/proxyscript.js"
+  ]
 }
 
 
