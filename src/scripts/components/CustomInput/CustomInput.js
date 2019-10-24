@@ -3,11 +3,16 @@ import template from './CustomInput.template';
 
 class CustomInput extends Base{
 
+  static get observedAttributes() {
+    return ['value'];
+  }
+
   constructor() {
     super();
   }
 
   config() {
+    super.config();
     this.data = {
       value: undefined,
       validateRules: undefined,
@@ -22,9 +27,7 @@ class CustomInput extends Base{
   }
 
   init() {
-    this.initData();
-    this.initView();
-    this.initEvent();
+    super.init();
   }
 
   initData() {
@@ -64,20 +67,23 @@ class CustomInput extends Base{
   }
 
   // 当自定义元素的一个属性被增加、移除或更改时被调用。:
-  attributeChangedCallback() {
-    super.attributeChangedCallback();
+  attributeChangedCallback(name, oldValue, newValue) {
+    super.attributeChangedCallback(name, oldValue, newValue);
+    if (name === 'value') {
+      this.setInputValue(newValue);
+    }
   }
 
   setInputValue(value) {
-    !!value && this.ele.ipt.setAttribute('value', value);
+    !!value && !!this.ele.ipt && this.ele.ipt.setAttribute('value', value);
   }
 
   setInputPlaceholder(value) {
-    !!value && this.ele.ipt.setAttribute('placeholder', value);
+    !!value && !!this.ele.ipt && this.ele.ipt.setAttribute('placeholder', value);
   }
 
   setLab(value) {
-    !!value && (this.ele.lab.innerHTML = value);
+    !!value && !!this.ele.lab && (this.ele.lab.innerHTML = value);
   }
 }
 

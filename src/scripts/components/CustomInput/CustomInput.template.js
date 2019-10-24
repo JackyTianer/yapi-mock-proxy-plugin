@@ -9,6 +9,7 @@ const template = `
       font-weight: bold;
     }
     .custom-input .ipt{
+      box-sizing: border-box;
       width: 100%;
       padding: 10px 4px;
     }
@@ -19,7 +20,7 @@ const template = `
     }
   </style>
   <div class="custom-input">
-    <div class="lab">数据：</div>
+    <div class="lab"></div>
     <input class="ipt" type="text">
   </div>
 `;

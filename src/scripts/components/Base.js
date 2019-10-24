@@ -16,6 +16,18 @@ class Base extends HTMLElement{
 
   // 子类重写
   init() {
+    this.initData();
+    this.initView();
+    this.initEvent();
+  }
+
+  initData() {
+  }
+
+  initView() {
+  }
+
+  initEvent() {
   }
 
   // 当自定义元素与文档DOM断开连接时被调用。
@@ -34,6 +46,13 @@ class Base extends HTMLElement{
 
   // 当自定义元素的一个属性被增加、移除或更改时被调用。:
   attributeChangedCallback() {
+  }
+
+  emit(eventName, detail) {
+    const event = new CustomEvent(eventName, {
+      detail: detail
+    });
+    this.dispatchEvent(event);
   }
 }
 
