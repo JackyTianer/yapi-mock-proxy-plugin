@@ -27,10 +27,12 @@ const syncApi = async() => {
   }
   storage.set({
     apiList: apiList
-  });
-  ext.runtime.sendMessage({
-    action: 'sync_api_success',
-    to: 'options'
+  }).then(() => {
+    ext.runtime.sendMessage({
+      action: 'sync_api_success',
+      to: 'options',
+      data: apiList
+    });
   });
 };
 

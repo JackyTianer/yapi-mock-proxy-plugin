@@ -47,6 +47,7 @@ function initEvent() {
   ext.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     if (request.action === 'sync_api_success' && request.to === 'options') {
       alert('同步成功');
+      console.table(request.data)
     }
   });
 }
