@@ -1,6 +1,6 @@
 <div align="center">
   <h1>
-    Extension Boilerplate  
+    1Extension Boilerplate  
   </h1>
 
   <p>
