@@ -8,8 +8,8 @@ let customAjax = {
     const originOpen = xhr.open;
     xhr.open = function (method, url) {
       for (let api of customAjax.config.apiList) {
-        if (url.indexOf(api.path) !== -1 && method === api.method) {
-          url = api.mockPath;
+        if (api.project_enable && url.indexOf(api.path) !== -1 && method === api.method) {
+          url = api.mock_path;
         }
       }
       originOpen.call(xhr, method, url);
@@ -20,8 +20,8 @@ let customAjax = {
   originalFetch: window.fetch.bind(window),
   myFetch: function (url, config) {
     for (let api of customAjax.config.apiList) {
-      if (url.indexOf(api.path) !== -1 && config.method === api.method) {
-        url = api.mockPath;
+      if (api.project_enable && url.indexOf(api.path) !== -1 && config.method === api.method) {
+        url = api.mock_path;
       }
     }
     return customAjax.originalFetch(url, config);

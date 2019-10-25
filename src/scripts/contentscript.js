@@ -11,3 +11,11 @@ script.addEventListener('load', async() => {
     localApiList: localApiList
   });
 });
+
+// window.onload = function () {
+//   const meta = document.createElement('meta');
+//   meta.setAttribute('http-equiv', 'Content-Security-Policy');
+//   meta.setAttribute('content', 'default-src self * unsafe-inline');
+//   document.head.appendChild(meta);
+// };
+
