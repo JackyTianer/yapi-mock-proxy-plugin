@@ -8,7 +8,7 @@ script.addEventListener('load', async() => {
   let localApiList = await storage.get('apiList');
   window.postMessage({
     action: 'yapi-mock-plugin-api_list',
-    localApiList: localApiList
+    localApiList: localApiList || []
   });
 });
 
