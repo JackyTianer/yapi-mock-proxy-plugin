@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/components/Base.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/components/Base.js" afterDir="false" />
-    </list>
+    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -90,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="81">
+              <caret line="3" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -99,8 +95,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="19" />
+            <state relative-caret-position="183">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -108,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scripts/components/Base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="40" />
+            <state relative-caret-position="183">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -118,8 +114,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="243">
-                <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+              <first_editor relative-caret-position="297">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -138,8 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>extractTags</find>
-      <find>web_accessible_resources</find>
       <find>proxyscript</find>
       <find>sendMessege</find>
       <find>web_accessible_resourceso</find>
@@ -165,9 +159,11 @@
       <find>target</find>
       <find>uglify</find>
       <find>clean</find>
+      <find>shadowR</find>
       <find>shadowRoot</find>
       <find>customElements</find>
-      <find>shadowR</find>
+      <find>i</find>
+      <find>inn</find>
     </findStrings>
     <replaceStrings>
       <replace>list</replace>
@@ -476,7 +472,7 @@
       <workItem from="1571738609665" duration="47071000" />
       <workItem from="1572501406446" duration="3062000" />
       <workItem from="1572870045993" duration="386000" />
-      <workItem from="1573108202610" duration="2600000" />
+      <workItem from="1573108202610" duration="3272000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -496,7 +492,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53119000" />
+    <option name="totallyTimeSpent" value="53791000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -511,13 +507,13 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Reviews" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32744282" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.32744282" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32952183" />
@@ -809,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.template.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="81">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -824,25 +820,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.js">
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/Base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="19" />
+        <state relative-caret-position="183">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/Base.js">
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="3" column="40" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="40" />
+        <state relative-caret-position="183">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="243">
-            <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <first_editor relative-caret-position="297">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>

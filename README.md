@@ -1,8 +1,4 @@
-<div align="center">
-  <h1>
-    YAPI MOCK拦截插件
-  </h1>
-
+## YAPI MOCK拦截插件
 
 ## Features
 1. 通过拦截YAPI上定义的接口，无需修改任何代码 即可自动mock
