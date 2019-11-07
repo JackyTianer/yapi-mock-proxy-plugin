@@ -1,7 +1,7 @@
 class Base extends HTMLElement{
   constructor() {
     super();
-    const shadowRoot = this.attachShadow({ mode: 'open' });
+    this.attachShadow({ mode: 'open' });
     this.config();
   }
 
