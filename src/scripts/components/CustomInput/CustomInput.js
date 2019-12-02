@@ -70,6 +70,7 @@ class CustomInput extends Base{
   attributeChangedCallback(name, oldValue, newValue) {
     super.attributeChangedCallback(name, oldValue, newValue);
     if (name === 'value') {
+      this.data.value = newValue;
       this.setInputValue(newValue);
     }
   }

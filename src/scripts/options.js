@@ -2,22 +2,18 @@ import ext from './utils/ext';
 import storage from './utils/storage2';
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter';
 import './components/CustomInput/CustomInput';
-import './components/ProjectList/ProjectList';
+import {EVENT} from './components/ProjectList/ProjectList';
 
 
 const serverConfig = document.querySelector('#serverConfig');
 const btnSync = document.querySelector('#btnSync');
 const tokenConfig = document.querySelector('#tokenConfig');
 
-function initData() {
-  storage.get('server')
-    .then((server) => {
-      !!server && serverConfig.setAttribute('value', server);
-    });
-  storage.get('projectList')
-    .then((projectList) => {
-      !!projectList && tokenConfig.setAttribute('list', JSON.stringify(projectList));
-    });
+async function initData() {
+  const server = await storage.get('server');
+  !!server && serverConfig.setAttribute('value', server);
+  const projectList = await storage.get('projectList');
+  !!projectList && tokenConfig.setAttribute('list', JSON.stringify(projectList));
 }
 
 function initEvent() {
@@ -28,7 +24,9 @@ function initEvent() {
       server: detail.value
     });
   });
-  tokenConfig.addEventListener('c-updateProjectList', ({ detail }) => {
+  tokenConfig.addEventListener(EVENT.UPDATE_PROJECT_LIST, async ({ detail }) => {
+    // 获取项目基本信息
+    const server = await storage.get('server');
     storage.set({
       projectList: detail.list
     });

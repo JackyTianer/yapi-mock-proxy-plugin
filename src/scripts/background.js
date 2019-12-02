@@ -17,6 +17,9 @@ const syncApi = async() => {
   const server = await storage.get('server');
   let apiList = [];
   for (let project of projectList) {
+    // 先获取project相关信息
+    const projectDtlResp = await ajax(`${server}/api/project/get?token=${project.token}`);
+    project.projectDetail = projectDtlResp.data;
     const response = await ajax(`${server}/api/interface/list?token=${project.token}`);
     for (let api of response.data.list) {
       // api.mockJSON = await ajax(`${server}/mock/${api.project_id}${api.path}`, api.method);
@@ -25,15 +28,21 @@ const syncApi = async() => {
     }
     apiList = [...apiList, ...response.data.list];
   }
-  storage.set({
-    apiList: apiList
-  }).then(() => {
+  try {
+    await storage.set({
+      projectList: projectList
+    });
+    await storage.set({
+      apiList: apiList
+    });
     ext.runtime.sendMessage({
       action: 'sync_api_success',
       to: 'options',
       data: apiList
     });
-  });
+  } catch (e) {
+    // todo
+  }
 };
 
 ext.runtime.onMessage.addListener(function (request, sender, sendResponse) {

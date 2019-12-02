@@ -134,3 +134,7 @@ class ProjectList extends Base{
 }
 
 customElements.define('project-list', ProjectList);
+
+export {
+  EVENT
+};
