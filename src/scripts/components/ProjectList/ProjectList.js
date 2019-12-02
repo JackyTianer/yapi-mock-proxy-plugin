@@ -76,11 +76,11 @@ class ProjectList extends Base{
   }
 
   renderItem() {
-    const removeList = () => {
+    (function removeList() {
       while (this.ele.list.firstChild) {
         this.ele.list.removeChild(this.ele.list.firstChild);
       }
-    };
+    })();
 
     const generateTokenIpt = (idx) => {
       let tokenIpt = document.createElement('custom-input');
@@ -121,7 +121,6 @@ class ProjectList extends Base{
       });
       return btn;
     };
-    removeList();
     for (let i = 0; i < this.data.list.length; i++) {
       const li = document.createElement('li');
       li.setAttribute('class', 'item f-cb');

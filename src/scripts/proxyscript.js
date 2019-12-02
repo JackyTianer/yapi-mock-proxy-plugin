@@ -1,6 +1,7 @@
 let customAjax = {
   config: {
-    apiList: []
+    apiList: [],
+    projectIdBlacklist: []
   },
   originalXHR: window.XMLHttpRequest,
   myXHR: function () {
@@ -8,7 +9,7 @@ let customAjax = {
     const originOpen = xhr.open;
     xhr.open = function (method, url) {
       for (let api of customAjax.config.apiList) {
-        if (api.project_enable && url.indexOf(api.path) !== -1 && method === api.method) {
+        if (url.indexOf(api.path) !== -1 && method === api.method && !customAjax.config.projectIdBlacklist.includes(api.project_id)) {
           url = api.mock_path;
         }
       }
@@ -20,7 +21,7 @@ let customAjax = {
   originalFetch: window.fetch.bind(window),
   myFetch: function (url, config) {
     for (let api of customAjax.config.apiList) {
-      if (api.project_enable && url.indexOf(api.path) !== -1 && config.method === api.method) {
+      if (url.indexOf(api.path) !== -1 && config.method === api.method && !customAjax.config.projectIdBlacklist.includes(api.project_id)) {
         url = api.mock_path;
       }
     }
@@ -29,9 +30,9 @@ let customAjax = {
 };
 window.addEventListener('message', function (event) {
   const data = event.data;
-  console.log(data);
   if (data.action === 'yapi-mock-plugin-api_list') {
     customAjax.config.apiList = data.localApiList;
+    customAjax.config.projectIdBlacklist = data.projectIdBlacklist;
     window.XMLHttpRequest = customAjax.myXHR;
     window.fetch = customAjax.myFetch;
   }

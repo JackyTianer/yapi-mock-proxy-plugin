@@ -24,7 +24,6 @@ const syncApi = async() => {
     for (let api of response.data.list) {
       // api.mockJSON = await ajax(`${server}/mock/${api.project_id}${api.path}`, api.method);
       api.mock_path = `${server}/mock/${api.project_id}${api.path}`;
-      api.project_enable = project.enable;
     }
     apiList = [...apiList, ...response.data.list];
   }
