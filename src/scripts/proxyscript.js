@@ -36,11 +36,4 @@ window.addEventListener('message', function (event) {
     window.XMLHttpRequest = customAjax.myXHR;
     window.fetch = customAjax.myFetch;
   }
-  // if (customAjax.settings.ajaxInterceptor_switchOn) {
-  //   window.XMLHttpRequest = customAjax.myXHR;
-  //   window.fetch = customAjax.myFetch;
-  // } else {
-  //   window.XMLHttpRequest = customAjax.originalXHR;
-  //   window.fetch = customAjax.originalFetch;
-  // }
 }, false);

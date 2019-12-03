@@ -1,17 +1,17 @@
-import fs from "fs";
+import fs from 'fs';
 import gulp from 'gulp';
-import {merge} from 'event-stream'
+import { merge } from 'event-stream';
 import browserify from 'browserify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
 import preprocessify from 'preprocessify';
-import gulpif from "gulp-if";
+import gulpif from 'gulp-if';
 
 const $ = require('gulp-load-plugins')();
 
-var production = process.env.NODE_ENV === "production";
-var target = process.env.TARGET || "chrome";
-var environment = process.env.NODE_ENV || "development";
+var production = process.env.NODE_ENV === 'production';
+var target = process.env.TARGET || 'chrome';
+var environment = process.env.NODE_ENV || 'development';
 
 var generic = JSON.parse(fs.readFileSync(`./config/${environment}.json`));
 var specific = JSON.parse(fs.readFileSync(`./config/${target}.json`));
@@ -19,36 +19,36 @@ var context = Object.assign({}, generic, specific);
 
 var manifest = {
   dev: {
-    "background": {
-      "scripts": [
-        "scripts/livereload.js",
-        "scripts/background.js"
+    'background': {
+      'scripts': [
+        'scripts/livereload.js',
+        'scripts/background.js'
       ]
     }
   },
 
   firefox: {
-    "applications": {
-      "gecko": {
-        "id": "my-app-id@mozilla.org"
+    'applications': {
+      'gecko': {
+        'id': 'my-app-id@mozilla.org'
       }
     }
   }
-}
+};
 
 // Tasks
 gulp.task('clean', () => {
-  return pipe(`./build/${target}`, $.clean())
-})
+  return pipe(`./build/${target}`, $.clean());
+});
 
 gulp.task('build', (cb) => {
-  $.runSequence('clean', 'styles', 'ext', cb)
+  $.runSequence('clean', 'styles', 'ext', cb);
 });
 
 gulp.task('watch', ['build'], () => {
   $.livereload.listen();
 
-  gulp.watch(['./src/**/*']).on("change", () => {
+  gulp.watch(['./src/**/*']).on('change', () => {
     $.runSequence('build', $.livereload.reload);
   });
 });
@@ -56,7 +56,7 @@ gulp.task('watch', ['build'], () => {
 gulp.task('default', ['build']);
 
 gulp.task('ext', ['manifest', 'js'], () => {
-  return mergeAll(target)
+  return mergeAll(target);
 });
 
 
@@ -64,8 +64,8 @@ gulp.task('ext', ['manifest', 'js'], () => {
 // COMMON
 // -----------------
 gulp.task('js', () => {
-  return buildJS(target)
-})
+  return buildJS(target);
+});
 
 gulp.task('styles', () => {
   return gulp.src('src/styles/**/*.scss')
@@ -78,41 +78,40 @@ gulp.task('styles', () => {
     .pipe(gulp.dest(`build/${target}/styles`));
 });
 
-gulp.task("manifest", () => {
+gulp.task('manifest', () => {
   return gulp.src('./manifest.json')
     .pipe(gulpif(!production, $.mergeJson({
-      fileName: "manifest.json",
-      jsonSpace: " ".repeat(4),
+      fileName: 'manifest.json',
+      jsonSpace: ' '.repeat(4),
       endObj: manifest.dev
     })))
-    .pipe(gulpif(target === "firefox", $.mergeJson({
-      fileName: "manifest.json",
-      jsonSpace: " ".repeat(4),
+    .pipe(gulpif(target === 'firefox', $.mergeJson({
+      fileName: 'manifest.json',
+      jsonSpace: ' '.repeat(4),
       endObj: manifest.firefox
     })))
-    .pipe(gulp.dest(`./build/${target}`))
+    .pipe(gulp.dest(`./build/${target}`));
 });
-
 
 
 // -----------------
 // DIST
 // -----------------
 gulp.task('dist', (cb) => {
-  $.runSequence('build', 'zip', cb)
+  $.runSequence('build', 'zip', cb);
 });
 
 gulp.task('zip', () => {
-  return pipe(`./build/${target}/**/*`, $.zip(`${target}.zip`), './dist')
-})
+  return pipe(`./build/${target}/**/*`, $.zip(`${target}.zip`), './dist');
+});
 
 
 // Helpers
 function pipe(src, ...transforms) {
   return transforms.reduce((stream, transform) => {
-    const isDest = typeof transform === 'string'
-    return stream.pipe(isDest ? gulp.dest(transform) : transform)
-  }, gulp.src(src))
+    const isDest = typeof transform === 'string';
+    return stream.pipe(isDest ? gulp.dest(transform) : transform);
+  }, gulp.src(src));
 }
 
 function mergeAll(dest) {
@@ -122,7 +121,7 @@ function mergeAll(dest) {
     pipe([`./src/images/${target}/**/*`], `./build/${dest}/images`),
     pipe(['./src/images/shared/**/*'], `./build/${dest}/images`),
     pipe(['./src/**/*.html'], `./build/${dest}`)
-  )
+  );
 }
 
 function buildJS(target) {
@@ -133,30 +132,35 @@ function buildJS(target) {
     'popup.js',
     'livereload.js',
     'proxyscript.js'
-  ]
+  ];
 
-  let tasks = files.map( file => {
+  let tasks = files.map(file => {
     return browserify({
       entries: 'src/scripts/' + file,
       debug: true
     })
-    .transform('babelify', { presets: ['es2015'] })
-    .transform(preprocessify, {
-      includeExtensions: ['.js'],
-      context: context
-    })
-    .bundle()
-    .pipe(source(file))
-    .pipe(buffer())
-    .pipe(gulpif(!production, $.sourcemaps.init({ loadMaps: true }) ))
-    .pipe(gulpif(!production, $.sourcemaps.write('./') ))
-    .pipe(gulpif(production, $.uglify({
-      "mangle": false,
-      "output": {
-        "ascii_only": true
-      }
-    })))
-    .pipe(gulp.dest(`build/${target}/scripts`));
+      .transform('babelify', {
+        presets: [['@babel/preset-env', {
+          'targets': {
+            'chrome': '50',
+            'firefox': '51',
+            'opera': '41'
+          }
+        }]]
+      })
+      .transform(preprocessify, {
+        includeExtensions: ['.js'],
+        context: context
+      })
+      .bundle()
+      .pipe(source(file))
+      .pipe(buffer())
+      .pipe(gulpif(!production, $.sourcemaps.init({ loadMaps: true })))
+      .pipe(gulpif(!production, $.sourcemaps.write('./')))
+      // .pipe(gulpif(production, $.uglify({
+      //   'mangle': false
+      // })))
+      .pipe(gulp.dest(`build/${target}/scripts`));
   });
 
   return merge.apply(null, tasks);

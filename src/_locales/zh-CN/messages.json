@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "YAPI MOCK Plugin",
+    "message": "yapi接口模拟插件",
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "Quickly simulate the interface defined on platform A, to achieve plug-ins compatible with all projects without modifying the code",
+    "message": "快速模拟在平台A上定义的接口,达到不修改代码就能兼容所有项目的插件",
     "description": "The description of the extension."
   },
   "btnTooltip": {
