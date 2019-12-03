@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复">
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.babel.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.babel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_locales/en/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/_locales/en/messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/proxyscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/proxyscript.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,7 +32,7 @@
           <entry key="babelrc" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="13" />
-          <entry key="js" value="113" />
+          <entry key="js" value="116" />
           <entry key="json" value="36" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
@@ -50,7 +46,7 @@
           <entry key="CSS" value="1" />
           <entry key="HTML" value="13" />
           <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="113" />
+          <entry key="JavaScript" value="116" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="10" />
@@ -61,8 +57,8 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="644" />
-          <entry key="js" value="12662" />
-          <entry key="json" value="244" />
+          <entry key="js" value="12667" />
+          <entry key="json" value="248" />
           <entry key="md" value="170" />
           <entry key="scss" value="279" />
           <entry key="txt" value="65" />
@@ -71,8 +67,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="885" />
-          <entry key="JSON" value="244" />
-          <entry key="JavaScript" value="12421" />
+          <entry key="JSON" value="248" />
+          <entry key="JavaScript" value="12426" />
           <entry key="Markdown" value="170" />
           <entry key="PLAIN_TEXT" value="65" />
           <entry key="SCSS" value="279" />
@@ -82,13 +78,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="161" column="13" lean-forward="true" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+            <state relative-caret-position="426">
+              <caret line="153" column="24" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
+                <element signature="e#3383#3456#0" />
               </folding>
             </state>
           </provider>
@@ -107,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="53">
-              <caret line="634" column="60" lean-forward="true" selection-start-line="634" selection-start-column="60" selection-end-line="634" selection-end-column="60" />
+              <caret line="634" column="60" selection-start-line="634" selection-start-column="60" selection-end-line="634" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -121,11 +118,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="239">
+              <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/babel-runtime/regenerator/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/regenerator-runtime/runtime-module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="47">
+              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -157,23 +172,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/background.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/production.json">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -186,9 +184,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn</find>
-      <find>initData</find>
-      <find>setOpenValue</find>
       <find>value</find>
       <find>boolean</find>
       <find>generateTokenIpt</find>
@@ -211,11 +206,14 @@
       <find>babel</find>
       <find>gulp-babel</find>
       <find>main</find>
-      <find>babelify@10.0.0</find>
       <find>async</find>
       <find>JS_Parse_Error</find>
-      <find>browserify</find>
       <find>warn_function</find>
+      <find>regeneratorRuntime</find>
+      <find>babelify@10.0.0</find>
+      <find>browserify</find>
+      <find>babelify</find>
+      <find>run-time</find>
     </findStrings>
     <replaceStrings>
       <replace>list</replace>
@@ -267,8 +265,8 @@
         <option value="$PROJECT_DIR$/src/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -421,31 +419,26 @@
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="chrome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="uglify-js" type="462c0819:PsiDirectoryNode" />
+              <item name="@babel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
               <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="uglify-js" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="babel-runtime" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="babel-runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="regenerator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,7 +539,7 @@
       <workItem from="1572870045993" duration="386000" />
       <workItem from="1573108202610" duration="3895000" />
       <workItem from="1573713110009" duration="1647000" />
-      <workItem from="1575268535702" duration="19463000" />
+      <workItem from="1575268535702" duration="20219000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -566,7 +559,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75524000" />
+    <option name="totallyTimeSpent" value="76280000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -591,10 +584,10 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Debug" order="7" visible="true" weight="0.3991684" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.31392932" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.31392932" />
       <window_info anchor="bottom" id="TODO" order="11" weight="0.32848233" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -671,27 +664,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scripts/utils/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/chrome/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="11794" column="1" lean-forward="true" selection-start-line="11794" selection-start-column="1" selection-end-line="11794" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102411">
@@ -969,20 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.babelrc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/chrome/scripts/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7111">
@@ -993,7 +951,7 @@
     <entry file="file://$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
-          <caret line="634" column="60" lean-forward="true" selection-start-line="634" selection-start-column="60" selection-end-line="634" selection-end-column="60" />
+          <caret line="634" column="60" selection-start-line="634" selection-start-column="60" selection-end-line="634" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1004,13 +962,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/chrome/scripts/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="403" column="33" selection-start-line="403" selection-start-column="15" selection-end-line="403" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="161" column="13" lean-forward="true" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+        <state relative-caret-position="426">
+          <caret line="153" column="24" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#3383#3456#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/babel-runtime/regenerator/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/regenerator-runtime/runtime-module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="47">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="55" column="38" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
         </state>
       </provider>
     </entry>

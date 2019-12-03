@@ -26,6 +26,7 @@
   "homepage": "https://github.com/JackyTianer/yapi-mock-chrome-plugin",
   "devDependencies": {
     "@babel/core": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/register": "^7.7.4",
     "babelify": "^10.0.0",
@@ -52,8 +53,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^2.3.0",
-    "babelify": "^10.0.0"
+    "@babel/runtime": "^7.7.4",
+    "@webcomponents/webcomponentsjs": "^2.3.0"
   },
   "main": "gulpfile.babel.js",
   "license": "ISC"

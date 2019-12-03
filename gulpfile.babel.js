@@ -146,7 +146,8 @@ function buildJS(target) {
             'firefox': '51',
             'opera': '41'
           }
-        }]]
+        }]],
+        plugins: ['@babel/plugin-transform-runtime']
       })
       .transform(preprocessify, {
         includeExtensions: ['.js'],
