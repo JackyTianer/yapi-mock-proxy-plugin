@@ -76,7 +76,7 @@ class ProjectList extends Base{
   }
 
   renderItem() {
-    (function removeList() {
+    (() => {
       while (this.ele.list.firstChild) {
         this.ele.list.removeChild(this.ele.list.firstChild);
       }
