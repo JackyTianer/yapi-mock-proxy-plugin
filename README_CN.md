@@ -4,9 +4,9 @@
 
 ## 截图
 
-![image.png](https://upload-images.jianshu.io/upload_images/8032324-1c5b8149abd51f6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/8032324-1c5b8149abd51f6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
 
-![image.png](https://upload-images.jianshu.io/upload_images/8032324-0c6f8f5b591c8f8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](https://upload-images.jianshu.io/upload_images/8032324-0c6f8f5b591c8f8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
 
 
 ## 功能

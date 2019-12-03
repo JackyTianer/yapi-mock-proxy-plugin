@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复">
-      <change afterPath="$PROJECT_DIR$/README_CN.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -59,7 +54,7 @@
           <entry key="html" value="644" />
           <entry key="js" value="12667" />
           <entry key="json" value="255" />
-          <entry key="md" value="1375" />
+          <entry key="md" value="1492" />
           <entry key="scss" value="279" />
           <entry key="txt" value="65" />
         </counts>
@@ -69,7 +64,7 @@
           <entry key="HTML" value="885" />
           <entry key="JSON" value="255" />
           <entry key="JavaScript" value="12426" />
-          <entry key="Markdown" value="1375" />
+          <entry key="Markdown" value="1492" />
           <entry key="PLAIN_TEXT" value="65" />
           <entry key="SCSS" value="279" />
         </counts>
@@ -143,8 +138,8 @@
         <entry file="file://$PROJECT_DIR$/README_CN.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="403">
-                <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+              <first_editor relative-caret-position="1728">
+                <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -532,7 +527,7 @@
       <workItem from="1572870045993" duration="386000" />
       <workItem from="1573108202610" duration="3895000" />
       <workItem from="1573713110009" duration="1647000" />
-      <workItem from="1575268535702" duration="23962000" />
+      <workItem from="1575268535702" duration="24237000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -552,7 +547,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80023000" />
+    <option name="totallyTimeSpent" value="80298000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,15 +560,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Reviews" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32952183" />
-      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3118503" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3118503" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32952183" />
@@ -997,8 +991,8 @@
     <entry file="file://$PROJECT_DIR$/README_CN.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="403">
-            <caret line="46" column="14" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+          <first_editor relative-caret-position="1728">
+            <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
