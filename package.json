@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/JackyTianer/yapi-mock-chrome-plugin.git"
   },
-  "author": "Bharani <bharani91@gmail.com> (https://github.com/bharani91)",
+  "author": "Kaku <bharani91@gmail.com> (https://github.com/bharani91)",
   "bugs": {
     "url": "https://github.com/JackyTianer/yapi-mock-chrome-plugin/issues"
   },
@@ -57,5 +57,5 @@
     "@webcomponents/webcomponentsjs": "^2.3.0"
   },
   "main": "gulpfile.babel.js",
-  "license": "ISC"
+  "license": "MIT"
 }
