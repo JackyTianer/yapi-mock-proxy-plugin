@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复" />
+    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,11 +20,11 @@
     <session id="1267887610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -27,45 +32,45 @@
           <entry key="babelrc" value="1" />
           <entry key="css" value="1" />
           <entry key="html" value="13" />
-          <entry key="js" value="117" />
-          <entry key="json" value="36" />
-          <entry key="lock" value="1" />
-          <entry key="md" value="3" />
+          <entry key="js" value="121" />
+          <entry key="json" value="43" />
+          <entry key="lock" value="2" />
+          <entry key="md" value="5" />
           <entry key="scss" value="10" />
           <entry key="ts" value="1" />
-          <entry key="txt" value="2" />
+          <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="13" />
-          <entry key="JSON" value="37" />
-          <entry key="JavaScript" value="117" />
-          <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JSON" value="44" />
+          <entry key="JavaScript" value="121" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="10" />
           <entry key="TypeScript" value="1" />
-          <entry key="yarn.lock" value="1" />
+          <entry key="yarn.lock" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="644" />
-          <entry key="js" value="12667" />
-          <entry key="json" value="255" />
-          <entry key="md" value="1492" />
+          <entry key="js" value="13006" />
+          <entry key="json" value="264" />
+          <entry key="md" value="1530" />
           <entry key="scss" value="279" />
-          <entry key="txt" value="65" />
+          <entry key="txt" value="157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="885" />
-          <entry key="JSON" value="255" />
-          <entry key="JavaScript" value="12426" />
-          <entry key="Markdown" value="1492" />
-          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="JSON" value="264" />
+          <entry key="JavaScript" value="12765" />
+          <entry key="Markdown" value="1530" />
+          <entry key="PLAIN_TEXT" value="157" />
           <entry key="SCSS" value="279" />
         </counts>
       </usages-collector>
@@ -74,101 +79,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="153" column="24" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-                <element signature="e#3383#3456#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/uglify-js/tools/node.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="35" column="31" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="634" column="60" selection-start-line="634" selection-start-column="60" selection-end-line="634" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.babelrc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="292">
-                <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/node_modules/minimatch/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="17" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README_CN.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1728">
-                <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/chrome/scripts/background.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/gulp/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5806">
-              <caret line="810" column="33" selection-start-line="810" selection-start-column="28" selection-end-line="810" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package-lock.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="375" column="6" selection-start-line="375" selection-start-column="6" selection-end-line="375" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/_locales/en/messages.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="145" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="145" />
+            <state relative-caret-position="426">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -185,14 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>removeList</find>
-      <find>add</find>
-      <find>=== '</find>
-      <find>render</find>
-      <find>updateProjectList</find>
-      <find>Event</find>
-      <find>project_enable</find>
-      <find>Boilerplate for building cross browser extensions</find>
       <find>UPDATE_PROJECT_LIST</find>
       <find>build</find>
       <find>ext</find>
@@ -205,16 +125,24 @@
       <find>main</find>
       <find>async</find>
       <find>JS_Parse_Error</find>
-      <find>warn_function</find>
       <find>regeneratorRuntime</find>
       <find>babelify@10.0.0</find>
       <find>babelify</find>
-      <find>browserify</find>
       <find>regenerator</find>
       <find>GeneratorFunctionPrototype</find>
       <find>GeneratorFunction</find>
-      <find>await</find>
+      <find>browserify</find>
       <find>run-time</find>
+      <find>await</find>
+      <find>warn_function</find>
+      <find>eslint</find>
+      <find>lint</find>
+      <find>util</find>
+      <find>lodash.template</find>
+      <find>gulp-util</find>
+      <find>zip</find>
+      <find>minimatch</find>
+      <find>lodash</find>
     </findStrings>
     <replaceStrings>
       <replace>list</replace>
@@ -261,14 +189,14 @@
         <option value="$PROJECT_DIR$/build/chrome/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/build/chrome/_locales/zh-CN/messages.json" />
         <option value="$PROJECT_DIR$/manifest.json" />
-        <option value="$PROJECT_DIR$/src/scripts/proxyscript.js" />
         <option value="$PROJECT_DIR$/src/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/scripts/proxyscript.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README_CN.md" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -286,7 +214,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -421,12 +349,47 @@
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="minimatch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="gulp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vinyl-fs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="vinyl-fs" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -527,7 +490,8 @@
       <workItem from="1572870045993" duration="386000" />
       <workItem from="1573108202610" duration="3895000" />
       <workItem from="1573713110009" duration="1647000" />
-      <workItem from="1575268535702" duration="24237000" />
+      <workItem from="1575268535702" duration="25030000" />
+      <workItem from="1575362840652" duration="3608000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -543,11 +507,18 @@
       <option name="project" value="LOCAL" />
       <updated>1571990029646</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: fixed when fetch's first param is the Request instance">
+      <created>1575426205443</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575426205443</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80298000" />
+    <option name="totallyTimeSpent" value="84699000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,15 +530,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Reviews" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3118503" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.2962578" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32952183" />
@@ -624,7 +596,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备" />
     <MESSAGE value="add: 同步提示逻辑修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: 同步提示逻辑修复" />
+    <MESSAGE value="fix: fixed when fetch's first param is the Request instance" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed when fetch's first param is the Request instance" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -632,45 +605,22 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js</url>
           <line>639</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/uglify-js/tools/node.js</url>
-          <line>28</line>
-          <properties lambdaOrdinal="-1" />
+          <line>3</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/node_modules/uglify-js/tools/node.js</url>
-          <line>36</line>
-          <properties lambdaOrdinal="-1" />
+          <line>18</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scripts/livereload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/NetEase/k12-web-front/gulpfile.js" />
-    <entry file="file://$USER_HOME$/NetEase/k12-web-front/toolkit/scripts/dist/dist.mobile.js" />
-    <entry file="file://$USER_HOME$/NetEase/k12-web-front/toolkit/scripts/dist/dist.web.js" />
-    <entry file="file://$PROJECT_DIR$/src/scripts/utils/storage2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/components/Base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -689,13 +639,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="3" column="5" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -727,20 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
           <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="n#!!block;n#initEvent#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,9 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="82" column="5" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,9 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="383">
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,20 +736,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/_locales/_locales/en/messages.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_locales/_locales/en/messages.json" />
     <entry file="file://$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
           <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <element signature="e#1576#2136#0" />
-            <element signature="e#2178#2578#0" />
-            <element signature="e#2619#3043#0" />
-            <element signature="e#3115#3385#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -834,13 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/proxyscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -904,13 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="375" column="6" selection-start-line="375" selection-start-column="6" selection-end-line="375" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/readable-stream/lib/_stream_readable.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53">
@@ -939,31 +839,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/babel-runtime/regenerator/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/regenerator-runtime/runtime-module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="153" column="24" selection-start-line="153" selection-start-column="24" selection-end-line="153" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <element signature="e#3383#3456#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/babel-runtime/regenerator/index.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/regenerator-runtime/runtime-module.js" />
     <entry file="file://$PROJECT_DIR$/build/chrome/scripts/background.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5806">
@@ -971,30 +848,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="17" />
+        <state relative-caret-position="160">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="292">
-            <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="5" selection-start-line="2" selection-start-column="4" selection-end-line="3" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="n#!!block;n#initEvent#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/proxyscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="e#715#729#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README_CN.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1728">
-            <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <first_editor relative-caret-position="20">
+            <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-eslint/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-972" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="2" column="101" selection-start-line="2" selection-end-line="2" selection-end-column="101" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129534">
+          <caret line="4799" column="15" selection-start-line="4799" selection-start-column="9" selection-end-line="4799" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/glob-stream/node_modules/minimatch/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/minimatch/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="13" />
         </state>
       </provider>
     </entry>
