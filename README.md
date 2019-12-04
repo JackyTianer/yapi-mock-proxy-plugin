@@ -1,6 +1,8 @@
 # yapi-mock-plugin 
 
--[简体中文](README_CN.md)
+![](https://img.shields.io/github/package-json/v/JackyTianer/yapi-mock-chrome-plugin?color=%2394c220)
+
+- [简体中文](README_CN.md)
 
 ## Screenshot
 
