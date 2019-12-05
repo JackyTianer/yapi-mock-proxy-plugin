@@ -16,18 +16,19 @@ const syncApi = async() => {
   const projectList = await storage.get('projectList');
   const server = await storage.get('server');
   let apiList = [];
-  for (let project of projectList) {
-    // 先获取project相关信息
-    const projectDtlResp = await ajax(`${server}/api/project/get?token=${project.token}`);
-    project.projectDetail = projectDtlResp.data;
-    const response = await ajax(`${server}/api/interface/list?token=${project.token}`);
-    for (let api of response.data.list) {
-      // api.mockJSON = await ajax(`${server}/mock/${api.project_id}${api.path}`, api.method);
-      api.mock_path = `${server}/mock/${api.project_id}${api.path}`;
-    }
-    apiList = [...apiList, ...response.data.list];
-  }
   try {
+    for (let project of projectList) {
+      // 先获取project相关信息
+      const projectDtlResp = await ajax(`${server}/api/project/get?token=${project.token}`);
+      project.projectDetail = projectDtlResp.data;
+      const response = await ajax(`${server}/api/interface/list?token=${project.token}`);
+      for (let api of response.data.list) {
+        // api.mockJSON = await ajax(`${server}/mock/${api.project_id}${api.path}`, api.method);
+        api.mock_path = `${server}/mock/${api.project_id}${api.path}`;
+      }
+      apiList = [...apiList, ...response.data.list];
+
+    }
     await storage.set({
       projectList: projectList
     });
@@ -40,8 +41,13 @@ const syncApi = async() => {
       data: apiList
     });
   } catch (e) {
-    // todo
+    ext.runtime.sendMessage({
+      action: 'sync_api_fail',
+      to: 'options',
+      data: '同步失败，请确认serve以及token是否正确'
+    });
   }
+
 };
 
 ext.runtime.onMessage.addListener(function (request, sender, sendResponse) {

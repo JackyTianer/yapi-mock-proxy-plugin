@@ -47,6 +47,9 @@ function initEvent() {
       alert('同步成功');
       console.table(request.data)
     }
+    if(request.action === 'sync_api_fail' && request.to === 'options'){
+      alert(request.data);
+    }
   });
 }
 
