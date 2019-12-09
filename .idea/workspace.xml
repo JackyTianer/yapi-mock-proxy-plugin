@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/options.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,20 +19,21 @@
     <session id="1267887610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="babelrc" value="1" />
           <entry key="css" value="1" />
-          <entry key="html" value="13" />
-          <entry key="js" value="121" />
-          <entry key="json" value="43" />
+          <entry key="html" value="14" />
+          <entry key="js" value="127" />
+          <entry key="json" value="45" />
           <entry key="lock" value="2" />
           <entry key="md" value="5" />
           <entry key="scss" value="10" />
@@ -44,9 +44,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="13" />
-          <entry key="JSON" value="44" />
-          <entry key="JavaScript" value="121" />
+          <entry key="HTML" value="14" />
+          <entry key="JSON" value="46" />
+          <entry key="JavaScript" value="127" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="10" />
@@ -56,21 +56,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="644" />
-          <entry key="js" value="13006" />
-          <entry key="json" value="264" />
+          <entry key="html" value="645" />
+          <entry key="js" value="13335" />
+          <entry key="json" value="267" />
           <entry key="md" value="1530" />
           <entry key="scss" value="279" />
-          <entry key="txt" value="157" />
+          <entry key="txt" value="167" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="885" />
-          <entry key="JSON" value="264" />
-          <entry key="JavaScript" value="12765" />
+          <entry key="HTML" value="886" />
+          <entry key="JSON" value="267" />
+          <entry key="JavaScript" value="13094" />
           <entry key="Markdown" value="1530" />
-          <entry key="PLAIN_TEXT" value="157" />
+          <entry key="PLAIN_TEXT" value="167" />
           <entry key="SCSS" value="279" />
         </counts>
       </usages-collector>
@@ -79,24 +79,82 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/minimatch/package.json">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="64" column="20" selection-start-line="63" selection-start-column="9" selection-end-line="64" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/background.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/options.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1242">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/utils/request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="243">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/node_modules/gulp/package.json">
+        <entry file="file://$PROJECT_DIR$/src/options.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="202">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package-lock.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="5253" column="29" selection-start-line="5253" selection-start-column="29" selection-end-line="5253" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manifest.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -113,19 +171,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UPDATE_PROJECT_LIST</find>
-      <find>build</find>
-      <find>ext</find>
-      <find>EVENT</find>
-      <find>dist</find>
-      <find>ugly</find>
-      <find>js</find>
-      <find>babel</find>
-      <find>gulp-babel</find>
-      <find>main</find>
-      <find>async</find>
-      <find>JS_Parse_Error</find>
-      <find>regeneratorRuntime</find>
       <find>babelify@10.0.0</find>
       <find>babelify</find>
       <find>regenerator</find>
@@ -138,11 +183,24 @@
       <find>eslint</find>
       <find>lint</find>
       <find>util</find>
-      <find>lodash.template</find>
-      <find>gulp-util</find>
       <find>zip</find>
       <find>minimatch</find>
       <find>lodash</find>
+      <find>lodash.template</find>
+      <find>gulp-util</find>
+      <find>vinyl-fs</find>
+      <find>manifest</find>
+      <find>hasTask</find>
+      <find>gulp-clean</find>
+      <find>try</find>
+      <find>server</find>
+      <find>正确</find>
+      <find>请确认serve以及token是否正确</find>
+      <find>camelcase</find>
+      <find>meow</find>
+      <find>webRequest</find>
+      <find>webRequestBlocking</find>
+      <find>storage</find>
     </findStrings>
     <replaceStrings>
       <replace>list</replace>
@@ -165,19 +223,15 @@
         <option value="$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.template.js" />
         <option value="$PROJECT_DIR$/src/styles/modules/_reset.scss" />
         <option value="$PROJECT_DIR$/src/styles/options.scss" />
-        <option value="$PROJECT_DIR$/src/scripts/utils/request.js" />
         <option value="$PROJECT_DIR$/src/scripts/utils/storage2.js" />
         <option value="$PROJECT_DIR$/src/scripts/utils/storage.js" />
         <option value="$PROJECT_DIR$/src/scripts/proxy/proxyScript.js" />
         <option value="$PROJECT_DIR$/build/chrome/manifest.json" />
         <option value="$PROJECT_DIR$/src/scripts/components/Base.js" />
-        <option value="$PROJECT_DIR$/src/scripts/background.js" />
         <option value="$PROJECT_DIR$/src/scripts/components/Switch/Switch.template.js" />
-        <option value="$PROJECT_DIR$/src/options.html" />
         <option value="$PROJECT_DIR$/src/scripts/components/Switch/Switch.js" />
         <option value="$PROJECT_DIR$/src/scripts/components/CustomSwitch/CustomSwitch.template.js" />
         <option value="$PROJECT_DIR$/src/styles/popup.scss" />
-        <option value="$PROJECT_DIR$/src/scripts/options.js" />
         <option value="$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.js" />
         <option value="$PROJECT_DIR$/src/scripts/components/CustomSwitch/CustomSwitch.js" />
         <option value="$PROJECT_DIR$/src/popup.html" />
@@ -188,15 +242,19 @@
         <option value="$PROJECT_DIR$/src/scripts/components/ProjectList/ProjectList.js" />
         <option value="$PROJECT_DIR$/build/chrome/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/build/chrome/_locales/zh-CN/messages.json" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/src/_locales/en/messages.json" />
         <option value="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" />
         <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/gulpfile.babel.js" />
         <option value="$PROJECT_DIR$/src/scripts/proxyscript.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README_CN.md" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/gulpfile.babel.js" />
+        <option value="$PROJECT_DIR$/src/scripts/utils/request.js" />
+        <option value="$PROJECT_DIR$/src/scripts/options.js" />
+        <option value="$PROJECT_DIR$/src/scripts/background.js" />
+        <option value="$PROJECT_DIR$/manifest.json" />
+        <option value="$PROJECT_DIR$/src/options.html" />
       </list>
     </option>
   </component>
@@ -214,7 +272,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -349,47 +407,24 @@
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="chrome" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="glob-stream" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="minimatch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="gulp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="vinyl-fs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="vinyl-fs" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -491,7 +526,8 @@
       <workItem from="1573108202610" duration="3895000" />
       <workItem from="1573713110009" duration="1647000" />
       <workItem from="1575268535702" duration="25030000" />
-      <workItem from="1575362840652" duration="3608000" />
+      <workItem from="1575362840652" duration="10162000" />
+      <workItem from="1575859840214" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -514,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1575426205443</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add: error tip">
+      <created>1575514191817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575514191817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84699000" />
+    <option name="totallyTimeSpent" value="91643000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -530,7 +573,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
@@ -597,7 +640,8 @@
     <MESSAGE value="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备" />
     <MESSAGE value="add: 同步提示逻辑修复" />
     <MESSAGE value="fix: fixed when fetch's first param is the Request instance" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed when fetch's first param is the Request instance" />
+    <MESSAGE value="add: error tip" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: error tip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -621,20 +665,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/Base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/options.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="29" selection-start-line="6" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/popup.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -649,20 +679,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/options.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -744,13 +764,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/gulp-load-plugins/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -784,16 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1053">
           <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -841,13 +844,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/babel-runtime/regenerator/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/regenerator-runtime/runtime-module.js" />
-    <entry file="file://$PROJECT_DIR$/build/chrome/scripts/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5806">
-          <caret line="810" column="33" selection-start-line="810" selection-start-column="28" selection-end-line="810" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -855,9 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.template.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -865,24 +859,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="n#!!block;n#initEvent#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/proxyscript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-          <folding>
-            <element signature="e#715#729#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -896,11 +876,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/gulp-eslint/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-972" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-eslint/package.json" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -911,40 +887,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129534">
-          <caret line="4799" column="15" selection-start-line="4799" selection-start-column="9" selection-end-line="4799" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/glob-stream/node_modules/minimatch/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/minimatch/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state relative-caret-position="-227">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/gulp/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/gulp-run-sequence/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="232">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/chrome/scripts/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="861" column="41" selection-start-line="861" selection-start-column="41" selection-end-line="861" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="64" column="20" selection-start-line="63" selection-start-column="9" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/utils/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="5253" column="29" selection-start-line="5253" selection-start-column="29" selection-end-line="5253" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/options.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
