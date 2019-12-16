@@ -24,7 +24,7 @@ You can download the source code and build it yourself, or download the built ve
 - [YAPI Mock Plugin Download Page  (GitHub release)](https://github.com/JackyTianer/yapi-mock-chrome-plugin/releases)
 
 ### Chrome Webstore
-You can download crx file in chrome webstore; [link](https://chrome.google.com/webstore/detail/bkfkiepeojidkfpkbipbaigkpdjbnlmf)
+You can download crx file in chrome webstore; [link](https://chrome.google.com/webstore/detail/hmilbnjkdfelpikedbjhcdbpbjdfphnl)
 
 ## How to use
 - After you install the plugin， click the settings button in the popup
