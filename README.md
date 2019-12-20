@@ -6,9 +6,9 @@
 
 ## Screenshot
 
-![image.png](https://upload-images.jianshu.io/upload_images/8032324-1c5b8149abd51f6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
+![image.png](./resources/images/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f383033323332342d316335623831343961626435316636652e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f.png)
 
-![image.png](https://upload-images.jianshu.io/upload_images/8032324-0c6f8f5b591c8f8d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/620)
+![image.png](./resources/images/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f383033323332342d306336663866356235393163386638642e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f.png)
 
 
 ## Features
@@ -30,7 +30,7 @@ You can download crx file in chrome webstore; [link](https://chrome.google.com/w
 - After you install the plugin， click the settings button in the popup
 - Input your server address like `https://yapi.test-host.net/`
 - Find you project token at yapi, you can find it at the token configuration in the project
-  ![image.png](https://upload-images.jianshu.io/upload_images/8032324-caeb54486d103328.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+  ![image.png](./resources/images/68747470733a2f2f75706c6f61642d696d616765732e6a69616e7368752e696f2f75706c6f61645f696d616765732f383033323332342d636165623534343836643130333332382e706e673f696d6167654d6f6772322f6175746f2d6f7269656e742f7374726970253743696d61676556696577322f322f.png)
 - Click the add project button and input you token on it
 - Click the Sync Now button, and when the popup prompts success, you will be happy to mock.
 

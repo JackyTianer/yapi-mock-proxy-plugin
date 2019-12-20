@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复" />
+    <list default="true" id="66fbb93c-1820-4f3a-b37e-5ea7526700f8" name="Default Changelist" comment="add: 同步提示逻辑修复">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README_CN.md" beforeDir="false" afterPath="$PROJECT_DIR$/README_CN.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,12 +20,12 @@
         <counts>
           <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="5" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.83" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -33,7 +36,8 @@
           <entry key="js" value="129" />
           <entry key="json" value="48" />
           <entry key="lock" value="2" />
-          <entry key="md" value="6" />
+          <entry key="md" value="7" />
+          <entry key="png" value="2" />
           <entry key="scss" value="10" />
           <entry key="ts" value="1" />
           <entry key="txt" value="3" />
@@ -43,9 +47,10 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="14" />
+          <entry key="Image" value="2" />
           <entry key="JSON" value="49" />
           <entry key="JavaScript" value="129" />
-          <entry key="Markdown" value="6" />
+          <entry key="Markdown" value="7" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="10" />
           <entry key="TypeScript" value="1" />
@@ -57,7 +62,7 @@
           <entry key="html" value="645" />
           <entry key="js" value="13335" />
           <entry key="json" value="268" />
-          <entry key="md" value="1530" />
+          <entry key="md" value="1532" />
           <entry key="scss" value="279" />
           <entry key="txt" value="167" />
         </counts>
@@ -67,7 +72,7 @@
           <entry key="HTML" value="886" />
           <entry key="JSON" value="268" />
           <entry key="JavaScript" value="13094" />
-          <entry key="Markdown" value="1530" />
+          <entry key="Markdown" value="1532" />
           <entry key="PLAIN_TEXT" value="167" />
           <entry key="SCSS" value="279" />
         </counts>
@@ -76,33 +81,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scripts/utils/request.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/options.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package-lock.json">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,22 +93,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
+            <state relative-caret-position="1215">
               <caret line="45" column="27" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="176">
+              <first_editor relative-caret-position="537">
                 <caret line="26" column="127" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="127" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README_CN.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="186">
+                <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/chrome-promo/large.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/chrome-promo/marquee.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -181,8 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>babelify</find>
-      <find>regenerator</find>
       <find>GeneratorFunctionPrototype</find>
       <find>GeneratorFunction</find>
       <find>browserify</find>
@@ -211,6 +209,8 @@
       <find>webRequestBlocking</find>
       <find>storage</find>
       <find>tabs</find>
+      <find>项目</find>
+      <find>羡慕</find>
     </findStrings>
     <replaceStrings>
       <replace>list</replace>
@@ -256,7 +256,6 @@
         <option value="$PROJECT_DIR$/src/_locales/zh-CN/messages.json" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/scripts/proxyscript.js" />
-        <option value="$PROJECT_DIR$/README_CN.md" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.babel.js" />
         <option value="$PROJECT_DIR$/src/scripts/utils/request.js" />
@@ -265,6 +264,7 @@
         <option value="$PROJECT_DIR$/src/options.html" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/README_CN.md" />
       </list>
     </option>
   </component>
@@ -282,7 +282,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1680" />
     <option name="height" value="1027" />
@@ -406,7 +406,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -417,41 +416,13 @@
             <path>
               <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
               <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="chrome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="chrome" type="462c0819:PsiDirectoryNode" />
-              <item name="icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YAPI-mock-plugin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YAPI-mock-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -553,6 +524,7 @@
       <workItem from="1576029474297" duration="2661000" />
       <workItem from="1576461219825" duration="47000" />
       <workItem from="1576461638747" duration="1490000" />
+      <workItem from="1576812871824" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="fix:storage为null的bug&#10;add: 增加enabled字段，为后续准备">
       <created>1571974452351</created>
@@ -586,7 +558,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97449000" />
+    <option name="totallyTimeSpent" value="98403000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,15 +570,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24984913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Reviews" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.28170478" />
+      <window_info anchor="bottom" id="Terminal" order="3" visible="true" weight="0.28135222" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32952183" />
@@ -689,20 +661,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomSwitch/CustomSwitch.template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomInput/CustomInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/components/CustomSwitch/CustomSwitch.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1701">
@@ -855,16 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README_CN.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="20">
-            <caret line="1" column="101" selection-start-line="1" selection-start-column="101" selection-end-line="1" selection-end-column="101" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/gulp-eslint/package.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/glob-stream/node_modules/minimatch/package.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -945,6 +893,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/scripts/proxyscript.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -973,22 +928,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="176">
+          <first_editor relative-caret-position="537">
             <caret line="26" column="127" lean-forward="true" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="127" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README_CN.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="186">
+            <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/chrome-promo/large.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/chrome-promo/marquee.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
