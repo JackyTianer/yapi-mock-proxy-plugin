@@ -23,7 +23,7 @@
 - [YAPI Mock Plugin Download Page  (GitHub release)](https://github.com/JackyTianer/yapi-mock-chrome-plugin/releases)
 
 ### 谷歌商店
-你也可以在谷歌商店里面直接下载插件使用 [link](https://chrome.google.com/webstore/detail/bkfkiepeojidkfpkbipbaigkpdjbnlmf)
+你也可以在谷歌商店里面直接下载插件使用 [link](https://chrome.google.com/webstore/detail/hmilbnjkdfelpikedbjhcdbpbjdfphnl)
 
 ## 怎么使用
 - 当安装完插件后，在弹窗上点击设置按钮
