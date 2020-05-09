@@ -37,8 +37,6 @@ function initEvent() {
     ext.runtime.sendMessage({
       action: 'sync_api',
       to: 'background'
-    }, (response) => {
-      console.log(response);
     });
   });
 

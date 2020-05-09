@@ -25,10 +25,18 @@ function initEvent() {
     storage.set({
       mainSwitch: detail.open
     });
+    ext.runtime.sendMessage({
+      action: 'update_storage_main_switch',
+      to: 'background'
+    });
   });
   projectListElement.addEventListener(miniProjectListEvent.UPDATE_PROJECT_LIST, ({ detail }) => {
     storage.set({
       projectList: detail.list
+    });
+    ext.runtime.sendMessage({
+      action: 'update_storage_project_list',
+      to: 'background'
     });
   });
 }
