@@ -8,12 +8,16 @@ let customAjax = {
     const xhr = new customAjax.originalXHR();
     const originOpen = xhr.open;
     xhr.open = function (method, url) {
+      let newUrl = '';
       for (let api of customAjax.config.apiList) {
         if (url.indexOf(api.path) !== -1 && method === api.method && !customAjax.config.projectIdBlacklist.includes(api.project_id)) {
-          url = api.mock_path;
+          newUrl = api.mock_path;
+          if (url.indexOf('?') !== -1) {
+            newUrl += url.substr(url.indexOf('?'));
+          }
         }
       }
-      originOpen.call(xhr, method, url);
+      originOpen.call(xhr, method, newUrl);
     };
     return xhr;
   },
@@ -21,12 +25,17 @@ let customAjax = {
   originalFetch: window.fetch.bind(window),
   myFetch: function (req, config) {
     let url = '';
+    let newUrl = '';
     let newRequest = req;
     if (!!window.Request && req instanceof window.Request) {
       url = req.url;
       for (let api of customAjax.config.apiList) {
         if (url.indexOf(api.path) !== -1 && req.method === api.method && !customAjax.config.projectIdBlacklist.includes(api.project_id)) {
-          newRequest = new window.Request(api.mock_path, {
+          newUrl = api.mock_path;
+          if (url.indexOf('?') !== -1) {
+            newUrl += url.substr(url.indexOf('?'));
+          }
+          newRequest = new window.Request(newUrl, {
             method: req.method,
             headers: req.header,
             body: req.body,
@@ -41,9 +50,15 @@ let customAjax = {
       }
     } else {
       url = req;
+
+      config = Object.assign({}, config);
+      config.method = config.method || 'GET';
       for (let api of customAjax.config.apiList) {
         if (url.indexOf(api.path) !== -1 && config.method === api.method && !customAjax.config.projectIdBlacklist.includes(api.project_id)) {
           newRequest = api.mock_path;
+          if (url.indexOf('?') !== -1) {
+            newRequest += url.substr(url.indexOf('?'));
+          }
         }
       }
     }

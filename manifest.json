@@ -14,9 +14,8 @@
     ]
   },
   "permissions": [
-    "tabs",
     "storage",
-    "<all_urls>",
+    "activeTab",
     "unlimitedStorage"
   ],
   "options_ui": {
