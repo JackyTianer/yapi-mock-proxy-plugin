@@ -25,14 +25,27 @@ function initEvent() {
     storage.set({
       mainSwitch: detail.open
     });
+    ext.runtime.sendMessage({
+      action: 'update_storage_main_switch',
+      to: 'background'
+    });
   });
   projectListElement.addEventListener(miniProjectListEvent.UPDATE_PROJECT_LIST, ({ detail }) => {
     storage.set({
       projectList: detail.list
     });
+    ext.runtime.sendMessage({
+      action: 'update_storage_project_list',
+      to: 'background'
+    });
   });
 }
-
+function initI18n(){
+  document.querySelector('.app-name').innerText = chrome.i18n.getMessage("popupTip");
+  document.querySelector('.ctrl-name').innerText = chrome.i18n.getMessage("mainSwitch");
+  document.querySelector('.js-options').innerText = chrome.i18n.getMessage("setting");
+}
 initData();
+initI18n();
 initEvent();
 

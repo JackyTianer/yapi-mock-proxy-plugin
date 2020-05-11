@@ -31,6 +31,10 @@ class ProjectList extends Base{
     super.init();
   }
 
+  initI18n() {
+    this.shadowRoot.querySelector('.add-btn').innerText = chrome.i18n.getMessage('addProject');
+  }
+
   initData() {
     this.ele.btn = this.shadowRoot.querySelector('#btn');
     this.ele.list = this.shadowRoot.querySelector('#list');
@@ -87,7 +91,7 @@ class ProjectList extends Base{
       tokenIpt.setAttribute('value', this.data.list[idx].token);
       tokenIpt.setAttribute('style', 'float: left;width:300px');
       tokenIpt.setAttribute('lab', 'token:');
-      tokenIpt.setAttribute('placeholder', '请从YAPI(项目/设置/token设置)获取token');
+      tokenIpt.setAttribute('placeholder', chrome.i18n.getMessage('tokenTip'));
       tokenIpt.addEventListener('c-change', ({ detail }) => {
         this.data.list[idx].token = detail.value;
         this.emit(EVENT.UPDATE_PROJECT_LIST, {

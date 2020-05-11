@@ -27,7 +27,7 @@ async function main() {
 
 }
 
-main();
+// main();
 
 // window.onload = function () {
 //   const meta = document.createElement('meta');

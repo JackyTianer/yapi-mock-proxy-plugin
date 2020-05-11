@@ -4,7 +4,7 @@ import template from './CustomInput.template';
 class CustomInput extends Base{
 
   static get observedAttributes() {
-    return ['value'];
+    return ['value', 'lab', 'placeholder'];
   }
 
   constructor() {
@@ -72,6 +72,14 @@ class CustomInput extends Base{
     if (name === 'value') {
       this.data.value = newValue;
       this.setInputValue(newValue);
+    }
+    if (name === 'lab') {
+      this.data.lab = newValue;
+      this.setLab(this.data.lab);
+    }
+    if (name === 'placeholder') {
+      this.data.placeholder = newValue;
+      this.setInputPlaceholder(this.data.placeholder);
     }
   }
 
