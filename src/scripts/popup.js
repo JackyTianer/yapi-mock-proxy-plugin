@@ -40,7 +40,12 @@ function initEvent() {
     });
   });
 }
-
+function initI18n(){
+  document.querySelector('.app-name').innerText = chrome.i18n.getMessage("popupTip");
+  document.querySelector('.ctrl-name').innerText = chrome.i18n.getMessage("mainSwitch");
+  document.querySelector('.js-options').innerText = chrome.i18n.getMessage("setting");
+}
 initData();
+initI18n();
 initEvent();
 

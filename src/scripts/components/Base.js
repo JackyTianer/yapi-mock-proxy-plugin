@@ -19,6 +19,9 @@ class Base extends HTMLElement{
     this.initData();
     this.initView();
     this.initEvent();
+    this.initI18n();
+  }
+  initI18n(){
   }
 
   initData() {

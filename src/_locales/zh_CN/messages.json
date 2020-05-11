@@ -1,46 +1,46 @@
 {
   "appName": {
-    "message": "YAPI MOCK Plugin",
+    "message": "yapi接口模拟插件",
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "Quickly simulate the interface defined on platform A, to achieve plug-ins compatible with all projects without modifying the code",
+    "message": "快速模拟在平台A上定义的接口,达到不修改代码就能兼容所有项目的插件",
     "description": "The description of the extension."
   },
   "setting": {
-    "message": "settings",
+    "message": "设置",
     "description": "The setting of the extension"
   },
   "popupTip": {
-    "message": "YAPI interface interceptor extension, detailed configuration, please click Settings.",
+    "message": "YAPI 接口拦截插件，详细配置请点击设置。",
     "description": "The tip of the popup.html"
   },
   "mainSwitch": {
-    "message": "Main Switch:",
+    "message": "拦截总开关：",
     "description": "The main switch of the interceptor"
   },
   "optionTip": {
-    "message": "YAPI interface interceptor extension configuration",
+    "message": "YAPI接口拦截插件配置",
     "description": "option.html tip"
   },
   "server": {
-    "message": "Server:",
+    "message": "服务器配置：",
     "description": "option.html server config"
   },
   "serverTip": {
-    "message": "Please set the YAPI server address。eg. https://yapi.test.com",
+    "message": "请设置yapi服务器地址。eg. https://yapi.test.com",
     "description": "option.html server tip text"
   },
   "addProject": {
-    "message": "Add Project +",
+    "message": "添加项目+",
     "description": "option.html btn text"
   },
   "syncInterface": {
-    "message": "Sync Interface",
+    "message": "立即同步接口",
     "description": "option.html btn text"
   },
   "tokenTip": {
-    "message": "Get token' from YAPI(project/Settings/token Settings)",
+    "message": "请从YAPI(项目/设置/token设置)获取token",
     "description": "option.html btn text"
   }
 }

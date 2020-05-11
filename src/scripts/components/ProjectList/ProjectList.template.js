@@ -69,7 +69,7 @@ const template = `
   <div class="project-list">
     <ul id="list" class="list"></ul>
     <div class="btn-wrap">
-      <button id="btn" class="add-btn">添加项目+</button>  
+      <button id="btn" class="add-btn"></button>  
     </div>
   </div>
 `;
