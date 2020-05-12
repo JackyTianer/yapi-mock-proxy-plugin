@@ -2,7 +2,6 @@ import ext from './utils/ext';
 import ajax from './utils/request';
 import storage from './utils/storage2';
 
-
 const getProjectIdBlacklist = (projectList) => {
   let projectIdBlacklist = [];
   for (let item of projectList) {
@@ -74,7 +73,7 @@ const addListener = () => {
     let projectList= await storage.get('projectList');
     let localApiList = await storage.get('apiList');
     let projectIdBlacklist = getProjectIdBlacklist(projectList);
-    chrome.webRequest.onBeforeRequest.addListener((request) => {
+    ext.webRequest.onBeforeRequest.addListener((request) => {
         if (mainSwitch) {
           let url = request.url;
           let method = request.method;
@@ -100,19 +99,16 @@ const addListener = () => {
       }, [
         'blocking'
       ]);
-    chrome.runtime.onMessage.addListener(async (request, sender, sendResponse)=>{
+    ext.runtime.onMessage.addListener(async (request)=>{
       if (request.action === 'update_storage_main_switch' && request.to === 'background') {
         mainSwitch = await storage.get(('mainSwitch'));
-        sendResponse();
       }
       if (request.action === 'update_storage_project_list' && request.to === 'background') {
         projectList = await storage.get('projectList');
         projectIdBlacklist = getProjectIdBlacklist(projectList);
-        sendResponse();
       }
       if (request.action === 'update_storage_api_list' && request.to === 'background') {
         localApiList = await storage.get('apiList');
-        sendResponse();
       }
     })
   }
