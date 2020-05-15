@@ -27,7 +27,6 @@ const syncApi = async() => {
         api.mock_path = `${server}/mock/${api.project_id}${api.path}`;
       }
       apiList = [...apiList, ...response.data.list];
-
     }
     await storage.set({
       projectList: projectList
@@ -35,19 +34,7 @@ const syncApi = async() => {
     await storage.set({
       apiList: apiList
     });
-    ext.runtime.sendMessage({
-      action: 'sync_api_success',
-      to: 'options',
-      data: apiList
-    });
-    ext.runtime.sendMessage({
-      action: 'update_storage_project_list',
-      to: 'background'
-    });
-    ext.runtime.sendMessage({
-      action: 'update_storage_api_list',
-      to: 'background'
-    });
+    ext.runtime.sendMessage({ action: 'sync_api_success', to: 'options', data: apiList });
   } catch (e) {
     ext.runtime.sendMessage({
       action: 'sync_api_fail',
@@ -55,73 +42,66 @@ const syncApi = async() => {
       data: '同步失败，请确认serve以及token是否正确'
     });
   }
-
 };
 
-const addListener = () => {
-  function addSyncListener() {
-    chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+const addListener = async() => {
+  let mainSwitch = await storage.get(('mainSwitch'));
+  let projectList = await storage.get('projectList');
+  let localApiList = await storage.get('apiList');
+  let projectIdBlacklist = getProjectIdBlacklist(projectList);
+
+  function addMessageListener() {
+    ext.runtime.onMessage.addListener(async function (request, sender, sendResponse) {
       if (request.action === 'sync_api' && request.to === 'background') {
         sendResponse({ action: 'sync_api_ing' });
-        syncApi();
+        await syncApi(sender.tab.id);
+        // 更新本地数据
+        mainSwitch = await storage.get(('mainSwitch'));
+        projectList = await storage.get('projectList');
+        localApiList = await storage.get('apiList');
+        projectIdBlacklist = getProjectIdBlacklist(projectList);
+        return;
+      }
+      if (request.action === 'update_storage_main_switch' && request.to === 'background') {
+        mainSwitch = await storage.get(('mainSwitch'));
+        return;
       }
     });
   };
 
-  async function addRequestListener() {
-    let mainSwitch = await storage.get(('mainSwitch'));
-    let projectList= await storage.get('projectList');
-    let localApiList = await storage.get('apiList');
-    let projectIdBlacklist = getProjectIdBlacklist(projectList);
+  function addRequestListener() {
     ext.webRequest.onBeforeRequest.addListener((request) => {
-        if (mainSwitch) {
-          let url = request.url;
-          let method = request.method;
-          let newUrl = '';
-          // isRedirect = gooDB.getIsRedirect();
-          for (let api of localApiList) {
-            if (url.indexOf(api.path) !== -1 && method === api.method && !projectIdBlacklist.includes(api.project_id)) {
-              newUrl = api.mock_path;
-              if (url.indexOf('?') !== -1) {
-                newUrl += url.substr(url.indexOf('?'));
-              }
+      if (mainSwitch) {
+        let url = request.url;
+        let method = request.method;
+        let newUrl = '';
+        // isRedirect = gooDB.getIsRedirect();
+        for (let api of localApiList) {
+          if (url.indexOf(api.path) !== -1 && method === api.method && !projectIdBlacklist.includes(api.project_id)) {
+            newUrl = api.mock_path;
+            if (url.indexOf('?') !== -1) {
+              newUrl += url.substr(url.indexOf('?'));
             }
           }
-          if (!!newUrl) {
-            return {
-              redirectUrl: newUrl
-            };
-          }
         }
-        return {};
-      }, {
-        urls: ['<all_urls>']
-      }, [
-        'blocking'
-      ]);
-    ext.runtime.onMessage.addListener(async (request)=>{
-      if (request.action === 'update_storage_main_switch' && request.to === 'background') {
-        mainSwitch = await storage.get(('mainSwitch'));
+        if (!!newUrl) {
+          return {
+            redirectUrl: newUrl
+          };
+        }
       }
-      if (request.action === 'update_storage_project_list' && request.to === 'background') {
-        projectList = await storage.get('projectList');
-        projectIdBlacklist = getProjectIdBlacklist(projectList);
-      }
-      if (request.action === 'update_storage_api_list' && request.to === 'background') {
-        localApiList = await storage.get('apiList');
-      }
-    })
+      return {};
+    }, {
+      urls: ['<all_urls>']
+    }, [
+      'blocking'
+    ]);
   }
 
-  addSyncListener();
+  addMessageListener();
   addRequestListener();
 };
 
-const main = async() => {
-  addListener();
-};
-
-main();
-
+addListener();
 
 

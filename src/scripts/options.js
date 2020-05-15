@@ -48,9 +48,6 @@ function initEvent() {
     if (request.action === 'sync_api_fail' && request.to === 'options') {
       alert(request.data);
     }
-    if(request.to === 'background'){
-      ext.runtime.sendMessage(request);
-    }
   });
 }
 
