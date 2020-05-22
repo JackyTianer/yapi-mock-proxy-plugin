@@ -1,6 +1,6 @@
 {
   "name": "yapi-mock-plugin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Quickly simulate the interface defined on platform A, to achieve plug-ins compatible with all projects without modifying the code",
   "scripts": {
     "chrome-build": "cross-env TARGET=chrome gulp",
