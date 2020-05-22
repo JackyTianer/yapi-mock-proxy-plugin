@@ -21,7 +21,7 @@ const syncApi = async() => {
       // 先获取project相关信息
       const projectDtlResp = await ajax(`${server}/api/project/get?token=${project.token}`);
       project.projectDetail = projectDtlResp.data;
-      const response = await ajax(`${server}/api/interface/list?token=${project.token}`);
+      const response = await ajax(`${server}/api/interface/list?token=${project.token}&limit=999999`);
       for (let api of response.data.list) {
         // api.mockJSON = await ajax(`${server}/mock/${api.project_id}${api.path}`, api.method);
         api.mock_path = `${server}/mock/${api.project_id}${api.path}`;
