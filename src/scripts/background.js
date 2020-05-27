@@ -2,7 +2,7 @@ import ext from './utils/ext';
 import ajax from './utils/request';
 import storage from './utils/storage2';
 
-const getProjectIdBlacklist = (projectList) => {
+const getProjectIdBlacklist = (projectList = []) => {
   let projectIdBlacklist = [];
   for (let item of projectList) {
     if (!item.enable && !!item.projectDetail) {
@@ -14,7 +14,10 @@ const getProjectIdBlacklist = (projectList) => {
 
 const syncApi = async() => {
   const projectList = await storage.get('projectList');
-  const server = await storage.get('server');
+  let server = await storage.get('server');
+  if (server[server.length - 1] === '/') {
+    server = server.slice(0, server.length - 1);
+  }
   let apiList = [];
   try {
     for (let project of projectList) {
@@ -35,6 +38,10 @@ const syncApi = async() => {
       apiList: apiList
     });
     ext.runtime.sendMessage({ action: 'sync_api_success', to: 'options', data: apiList });
+    return {
+      projectList,
+      apiList
+    };
   } catch (e) {
     ext.runtime.sendMessage({
       action: 'sync_api_fail',
@@ -54,16 +61,15 @@ const addListener = async() => {
     ext.runtime.onMessage.addListener(async function (request, sender, sendResponse) {
       if (request.action === 'sync_api' && request.to === 'background') {
         sendResponse({ action: 'sync_api_ing' });
-        await syncApi(sender.tab.id);
+        const result = await syncApi(sender.tab.id);
         // 更新本地数据
-        mainSwitch = await storage.get(('mainSwitch'));
-        projectList = await storage.get('projectList');
-        localApiList = await storage.get('apiList');
+        projectList = result.projectList;
+        localApiList = result.apiList;
         projectIdBlacklist = getProjectIdBlacklist(projectList);
         return;
       }
       if (request.action === 'update_storage_main_switch' && request.to === 'background') {
-        mainSwitch = await storage.get(('mainSwitch'));
+        mainSwitch = request.data.mainSwitch;
         return;
       }
     });
@@ -101,7 +107,6 @@ const addListener = async() => {
   addMessageListener();
   addRequestListener();
 };
-
 addListener();
 
 

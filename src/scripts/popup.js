@@ -27,7 +27,10 @@ function initEvent() {
     });
     ext.runtime.sendMessage({
       action: 'update_storage_main_switch',
-      to: 'background'
+      to: 'background',
+      data: {
+        mainSwitch: detail.open
+      }
     });
   });
   projectListElement.addEventListener(miniProjectListEvent.UPDATE_PROJECT_LIST, ({ detail }) => {
@@ -40,11 +43,13 @@ function initEvent() {
     });
   });
 }
-function initI18n(){
-  document.querySelector('.app-name').innerText = chrome.i18n.getMessage("popupTip");
-  document.querySelector('.ctrl-name').innerText = chrome.i18n.getMessage("mainSwitch");
-  document.querySelector('.js-options').innerText = chrome.i18n.getMessage("setting");
+
+function initI18n() {
+  document.querySelector('.app-name').innerText = chrome.i18n.getMessage('popupTip');
+  document.querySelector('.ctrl-name').innerText = chrome.i18n.getMessage('mainSwitch');
+  document.querySelector('.js-options').innerText = chrome.i18n.getMessage('setting');
 }
+
 initData();
 initI18n();
 initEvent();
