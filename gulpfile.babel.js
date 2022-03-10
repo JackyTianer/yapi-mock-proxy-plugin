@@ -16,6 +16,7 @@ var environment = process.env.NODE_ENV || 'development';
 var generic = JSON.parse(fs.readFileSync(`./config/${environment}.json`));
 var specific = JSON.parse(fs.readFileSync(`./config/${target}.json`));
 var context = Object.assign({}, generic, specific);
+var sass = require('gulp-sass')(require('sass'));
 
 var manifest = {
   dev: {
@@ -70,11 +71,11 @@ gulp.task('js', () => {
 gulp.task('styles', () => {
   return gulp.src('src/styles/**/*.scss')
     .pipe($.plumber())
-    .pipe($.sass.sync({
+    .pipe(sass({
       outputStyle: 'expanded',
       precision: 10,
       includePaths: ['.']
-    }).on('error', $.sass.logError))
+    }).on('error', sass.logError))
     .pipe(gulp.dest(`build/${target}/styles`));
 });
 
